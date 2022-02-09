@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <link rel="icon" type="image/x-icon"
+        href="https://cdn.pixabay.com/photo/2019/02/23/11/49/galaxy-icon-4015403_1280.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>CrudLogin</title>
+</head>
+
+<body>
+
+    <section class=" p-5" style="background-color: #508bfc; height: 130vh;">
+
+        <button class="btn btn-primary btn-lg btn-block " type="submit"
+            style="background-color: white;color:rgb(91, 91, 211); width: 200px; border: none;" onclick="removeModal()">
+            Fazer cadastro
+        </button>
+
+        <div class="container py-5  ">
+            <div class="row d-flex justify-content-center align-items-center ">
+                <div class="col-12 col-md-8 col-lg-6 col-xl-5 " id="openDivModal">
+
+                    <div class="card shadow-2-strong" style="border-radius: 1rem;">
+
+                        <div class="card-body p-5 text-center">
+
+                            <h3 class="mb-5">Crud Login</h3>
+
+                            <div class="form-outline mb-4">
+                                <input type="email" id="typeEmailX-2" class="form-control form-control-lg"
+                                    placeholder="Digite seu email..." />
+                            </div>
+
+                            <div class="form-outline mb-4">
+                                <input type="number" id="typePasswordX-2" class="form-control form-control-lg"
+                                    placeholder="Digite seu número de telefone..." />
+                            </div>
+
+                            <button class="btn btn-primary btn-lg btn-block" type="submit">Efetuar Crud</button>
+                            <button class="btn btn-warning btn-lg btn-block" type="submit" onclick="closeModal()">Fechar
+                                Modal</button>
+
+                            <hr class="my-4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-8 col-lg-10 p-5 bg bg-white"
+            style="margin: auto; border: none; border-radius: 10px; ">
+
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>E-mail</th>
+                        <th>Telefone/Celular</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>exemplo@gmail.com</td>
+                        <td>(00)2233-555</td>
+                        <td>
+                            <button class="btn btn-info
+                            btn-lg " type="submit" onclick="closeModal()">
+                                Editar
+                            </button>
+                            <button class="btn btn-warning btn-lg " type="submit" onclick="closeModal()">
+                                Excluir
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>exemplo@gmail.com</td>
+                        <td>(00)2233-555</td>
+                        <td>
+                            <button class="btn btn-info
+                            btn-lg " type="submit" onclick="closeModal()">
+                                Editar
+                            </button>
+                            <button class="btn btn-warning btn-lg " type="submit" onclick="closeModal()">
+                                Excluir
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>exemplo@gmail.com</td>
+                        <td>(00)4673-555</td>
+                        <td>
+                            <button class="btn btn-info
+                            btn-lg " type="submit" onclick="closeModal()">
+                                Editar
+                            </button>
+                            <button class="btn btn-warning btn-lg " type="submit" onclick="closeModal()">
+                                Excluir
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="assets/JS/script.js"></script>
+
+</body>
+
+</html>
